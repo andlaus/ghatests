@@ -31,4 +31,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "hi, world:"
+          echo "repo: ${{github.event.client_payload.repo}}"
           cat README.md
